@@ -29,7 +29,7 @@ const submit = () => {
         <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-24 overflow-hidden bg-white dark:bg-gray-900 transition-colors duration-500">
             <GradientBlob colorClass="from-teal-200 to-emerald-200" positionClass="top-[10%] -left-[10%] w-[600px] h-[600px] blur-[100px]" />
             
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
                 <div class="max-w-3xl">
                     <div v-motion
                          :initial="{ opacity: 0, y: 30 }"
@@ -58,7 +58,7 @@ const submit = () => {
 
         <!-- Contact Content Section -->
         <section class="py-16 bg-gray-50 dark:bg-gray-800 relative overflow-hidden transition-colors duration-500">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
                     <!-- Contact Info -->

@@ -49,7 +49,7 @@ import { ArrowRight, GraduationCap, BookOpen, School, Building2 } from 'lucide-v
 
         <!-- Journey / Timeline Section -->
         <section class="py-24 bg-gray-50 dark:bg-gray-900 relative overflow-hidden transition-colors duration-500">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <SectionTitle 
                     :title="$t('study.programs.title')" 
                     :subtitle="$t('study.programs.subtitle')"

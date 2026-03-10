@@ -93,7 +93,7 @@ onMounted(() => {
         
         <!-- Hero Section -->
         <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
                      <div v-motion
                          :initial="{ opacity: 0, x: -50 }"
@@ -178,7 +178,7 @@ onMounted(() => {
         <section id="services" class="py-24 relative bg-gray-50 dark:bg-gray-900 overflow-hidden transition-colors duration-500">
             <GradientBlob positionClass="top-40 right-0 w-[40rem] h-[40rem]" colorClass="bg-brand-200" />
 
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <SectionTitle 
                     :title="$t('services.title')" 
                     :subtitle="$t('services.subtitle')"
@@ -220,7 +220,7 @@ onMounted(() => {
         <section class="py-24 bg-white dark:bg-gray-800 relative overflow-hidden transition-colors duration-500">
             <GradientBlob positionClass="bottom-0 left-0 w-[40rem] h-[40rem]" colorClass="bg-accent-100" />
             
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div v-motion
                          :initial="{ opacity: 0, x: -50 }"
@@ -260,7 +260,7 @@ onMounted(() => {
 
         <!-- Stats Section -->
         <section class="py-12 bg-white dark:bg-gray-900 border-y border-gray-100 dark:border-gray-800 relative z-20 transition-colors duration-500">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
                     <div v-for="(stat, index) in stats" :key="index"
                          v-motion
