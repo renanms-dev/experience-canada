@@ -18,7 +18,7 @@ const repeatedPartners = [...partners, ...partners];
 
 <template>
     <section class="py-16 bg-white dark:bg-gray-900 overflow-hidden border-t border-b border-gray-100 dark:border-gray-800 transition-colors duration-500">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 text-center">
+        <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 mb-8 text-center">
             <h3 class="text-sm font-bold tracking-widest text-gray-400 dark:text-gray-500 uppercase transition-colors">
                 {{ $t('partners.title') }}
             </h3>

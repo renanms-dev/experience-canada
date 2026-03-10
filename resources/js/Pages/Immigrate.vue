@@ -20,7 +20,7 @@ import { ArrowRight, Plane, Briefcase, Users, FileCheck } from 'lucide-vue-next'
 
             <GradientBlob colorClass="from-rose-500/10 to-orange-500/10" positionClass="top-[10%] -left-[10%] w-[800px] h-[800px] blur-[120px]" />
             
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
                 <div class="order-2 lg:order-1 hidden lg:block relative" 
                      v-motion 
                      :initial="{ opacity: 0, x: -30 }" 
@@ -54,7 +54,7 @@ import { ArrowRight, Plane, Briefcase, Users, FileCheck } from 'lucide-vue-next'
 
         <!-- Services Alternating Rows Section -->
         <section class="py-24 bg-gray-50 dark:bg-gray-900 relative overflow-hidden transition-colors duration-500">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <SectionTitle 
                     :title="$t('immigrate.services.title')" 
                     :subtitle="$t('immigrate.services.subtitle')"

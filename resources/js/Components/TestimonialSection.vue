@@ -7,7 +7,7 @@ const { t } = useI18n();
 
 <template>
     <section id="testimonials" class="py-24 bg-brand-50 dark:bg-gray-900 relative overflow-hidden transition-colors duration-500">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-16" 
                  v-motion
                  :initial="{ opacity: 0, y: 30 }"

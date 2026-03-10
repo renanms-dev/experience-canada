@@ -41,7 +41,7 @@ const stats = computed(() => [
             </div>
 
             <!-- Wide Image Showcase -->
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4" 
+            <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 mt-4" 
                  v-motion 
                  :initial="{ opacity: 0, y: 40 }" 
                  :enter="{ opacity: 1, y: 0, transition: { duration: 1000, delay: 200 } }">
@@ -54,7 +54,7 @@ const stats = computed(() => [
 
         <!-- Stats Section (Imported from Welcome) -->
         <section class="py-16 bg-white dark:bg-gray-900 border-y border-gray-100 dark:border-gray-800 relative z-20 transition-colors duration-500">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
                     <div v-for="(stat, index) in stats" :key="index"
                          v-motion
@@ -72,7 +72,7 @@ const stats = computed(() => [
         <section class="py-24 bg-gray-50 dark:bg-gray-800 relative overflow-hidden transition-colors duration-500">
             <GradientBlob colorClass="from-purple-100 to-indigo-100" positionClass="bottom-[10%] right-[10%] w-[500px] h-[500px] blur-[100px]" />
 
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <SectionTitle 
                     :title="$t('about.values.title')" 
                     :subtitle="$t('about.values.subtitle')"

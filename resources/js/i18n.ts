@@ -9,7 +9,10 @@ const messages = {
             about: 'About Us',
             contact: 'Contact Us',
             book_consultation: 'Book Consultation',
-            language: 'Language'
+            language: 'Language',
+            login: 'Log in',
+            register: 'Register',
+            dashboard: 'Dashboard'
         },
         hero: {
             badge: 'Your trusted path to Canada',
@@ -228,6 +231,29 @@ const messages = {
             title_immigrate: 'Immigrate to Canada - ExperienceCanada',
             title_about: 'About Us - ExperienceCanada',
             title_contact: 'Contact Us - ExperienceCanada'
+        },
+        auth: {
+            login: 'Log in',
+            email: 'Email',
+            password: 'Password',
+            remember_me: 'Remember me',
+            forgot_password: 'Forgot your password?',
+            register: 'Register',
+            name: 'Name',
+            confirm_password: 'Confirm Password',
+            already_registered: 'Already registered?',
+            forgot_password_title: 'Forgot Password',
+            forgot_password_desc: 'Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.',
+            email_password_reset_link: 'Email Password Reset Link',
+            reset_password: 'Reset Password',
+            confirm_password_title: 'Confirm Password',
+            confirm_password_desc: 'This is a secure area of the application. Please confirm your password before continuing.',
+            confirm: 'Confirm',
+            verify_email_title: 'Email Verification',
+            verify_email_desc: 'Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn\'t receive the email, we will gladly send you another.',
+            verify_email_success: 'A new verification link has been sent to the email address you provided during registration.',
+            resend_verification_email: 'Resend Verification Email',
+            log_out: 'Log Out'
         }
     },
     es: {
@@ -238,7 +264,10 @@ const messages = {
             about: 'Nosotros',
             contact: 'Contáctanos',
             book_consultation: 'Solicitar Asesoría',
-            language: 'Idioma'
+            language: 'Idioma',
+            login: 'Entrar',
+            register: 'Registro',
+            dashboard: 'Portal'
         },
         hero: {
             badge: 'Tu camino confiable a Canadá',
@@ -457,6 +486,29 @@ const messages = {
             title_immigrate: 'Inmigrar a Canadá - ExperienceCanada',
             title_about: 'Nosotros - ExperienceCanada',
             title_contact: 'Contáctanos - ExperienceCanada'
+        },
+        auth: {
+            login: 'Entrar',
+            email: 'Correo Electrónico',
+            password: 'Contraseña',
+            remember_me: 'Recordarme',
+            forgot_password: '¿Olvidaste tu contraseña?',
+            register: 'Registro',
+            name: 'Nombre',
+            confirm_password: 'Confirmar Contraseña',
+            already_registered: '¿Ya estás registrado?',
+            forgot_password_title: 'Recuperar Contraseña',
+            forgot_password_desc: '¿Olvidaste tu contraseña? No hay problema. Solo indícanos tu dirección de correo electrónico y te enviaremos un enlace para restablecerla.',
+            email_password_reset_link: 'Enviar enlace de recuperación',
+            reset_password: 'Restablecer Contraseña',
+            confirm_password_title: 'Confirmar Contraseña',
+            confirm_password_desc: 'Esta es una zona segura de la aplicación. Por favor, confirma tu contraseña antes de continuar.',
+            confirm: 'Confirmar',
+            verify_email_title: 'Verificación de Correo',
+            verify_email_desc: '¡Gracias por registrarte! Antes de comenzar, ¿podrías verificar tu dirección de correo electrónico haciendo clic en el enlace que te acabamos de enviar? Si no recibiste el correo, te enviaremos otro con gusto.',
+            verify_email_success: 'Se ha enviado un nuevo enlace de verificación a la dirección de correo electrónico que proporcionaste durante el registro.',
+            resend_verification_email: 'Reenviar correo de verificación',
+            log_out: 'Cerrar Sesión'
         }
     },
     fr: {
@@ -467,7 +519,10 @@ const messages = {
             about: 'À Propos',
             contact: 'Contactez-nous',
             book_consultation: 'Demander une Consultation',
-            language: 'Langue'
+            language: 'Langue',
+            login: 'Connexion',
+            register: 'S\'inscrire',
+            dashboard: 'Tableau de bord'
         },
         hero: {
             badge: 'Votre chemin de confiance vers le Canada',
@@ -686,6 +741,29 @@ const messages = {
             title_immigrate: 'Immigrer au Canada - ExperienceCanada',
             title_about: 'À Propos - ExperienceCanada',
             title_contact: 'Contactez-nous - ExperienceCanada'
+        },
+        auth: {
+            login: 'Connexion',
+            email: 'Adresse e-mail',
+            password: 'Mot de passe',
+            remember_me: 'Se souvenir de moi',
+            forgot_password: 'Mot de passe oublié ?',
+            register: 'S\'inscrire',
+            name: 'Nom',
+            confirm_password: 'Confirmer le mot de passe',
+            already_registered: 'Déjà inscrit ?',
+            forgot_password_title: 'Mot de passe oublié',
+            forgot_password_desc: 'Mot de passe oublié ? Pas de problème. Indiquez-nous simplement votre adresse e-mail et nous vous enverrons un lien de réinitialisation de mot de passe qui vous permettra d\'en choisir un nouveau.',
+            email_password_reset_link: 'Envoyer le lien de réinitialisation',
+            reset_password: 'Réinitialiser le mot de passe',
+            confirm_password_title: 'Confirmer le mot de passe',
+            confirm_password_desc: 'Il s\'agit d\'une zone sécurisée de l\'application. Veuillez confirmer votre mot de passe avant de continuer.',
+            confirm: 'Confirmer',
+            verify_email_title: 'Vérification de l\'e-mail',
+            verify_email_desc: 'Merci pour votre inscription ! Avant de commencer, pourriez-vous vérifier votre adresse e-mail en cliquant sur le lien que nous venons de vous envoyer ? Si vous n\'avez pas reçu l\'e-mail, nous vous en enverrons un autre avec plaisir.',
+            verify_email_success: 'Un nouveau lien de vérification a été envoyé à l\'adresse e-mail que vous avez fournie lors de l\'inscription.',
+            resend_verification_email: 'Renvoyer l\'e-mail de vérification',
+            log_out: 'Déconnexion'
         }
     }
 };
