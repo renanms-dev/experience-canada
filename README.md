@@ -1,59 +1,134 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Experience Canada
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Experience Canada is a Laravel and Vue application for an immigration and education consulting business focused on helping clients study, work, and immigrate to Canada.
 
-## About Laravel
+The project combines a public marketing website, localized content, authentication, and an authenticated user area built with Inertia.js.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Highlights
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Laravel 12 backend with Inertia.js and Vue 3
+- Server-side rendering with Vite SSR
+- Localized experience in English, Spanish, and French
+- Authentication flows powered by Laravel Breeze
+- Custom email templates for account verification and password reset
+- Public pages for study, immigration, about, and contact
+- Authenticated dashboard and profile management
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Tech Stack
 
-## Learning Laravel
+- PHP 8.2+
+- Laravel 12
+- Inertia.js
+- Vue 3
+- Vite
+- TypeScript
+- Tailwind CSS
+- Ziggy
+- Vue I18n
+- `@vue/server-renderer` for SSR
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## Main Routes
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- `/` home page
+- `/study` study in Canada page
+- `/immigrate` immigration services page
+- `/about` company page
+- `/contact` contact page
+- `/login` authentication
+- `/register` authentication
+- `/dashboard` authenticated area
+- `/profile` profile management
 
-## Laravel Sponsors
+## Localization
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+The frontend includes English, Spanish, and French translations. The backend locale middleware also accepts the `X-Locale` header for supported locales:
 
-### Premium Partners
+- `en`
+- `es`
+- `fr`
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## SSR
 
-## Contributing
+Server-side rendering is configured through Vite and Inertia. The SSR entrypoint is [`resources/js/ssr.ts`](/Users/renan/Projects/experience/resources/js/ssr.ts).
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+For authenticated users, SSR is disabled by middleware to avoid rendering personalized authenticated pages on the server.
 
-## Code of Conduct
+## Project Structure
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- [`app/`](/Users/renan/Projects/experience/app) Laravel application code
+- [`resources/js/`](/Users/renan/Projects/experience/resources/js) Vue pages, layouts, components, i18n, and SSR entry
+- [`resources/views/`](/Users/renan/Projects/experience/resources/views) Blade templates and mail views
+- [`routes/web.php`](/Users/renan/Projects/experience/routes/web.php) web routes
+- [`lang/`](/Users/renan/Projects/experience/lang) translation files
 
-## Security Vulnerabilities
+## Local Setup
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Requirements
+
+- PHP 8.2+
+- Composer
+- Node.js
+- npm
+- A database supported by Laravel
+
+### Install
+
+```bash
+composer setup
+```
+
+The `composer setup` script installs PHP dependencies, creates `.env` when needed, generates the app key, runs migrations, installs frontend dependencies, and builds the assets.
+
+If you prefer to run the steps manually:
+
+```bash
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+npm install
+npm run build
+```
+
+## Development
+
+Run the full local development stack with:
+
+```bash
+composer dev
+```
+
+This starts:
+
+- Laravel development server
+- queue listener
+- log tailing with Laravel Pail
+- Vite dev server
+
+## Available Scripts
+
+```bash
+composer dev
+composer test
+npm run dev
+npm run build
+npm run type-check
+```
+
+## Testing
+
+Run the backend test suite with:
+
+```bash
+composer test
+```
+
+## Notes
+
+- Built with Inertia, so pages are rendered through Vue components instead of a traditional Blade-only frontend.
+- Email notification templates are customized under [`resources/views/emails/`](/Users/renan/Projects/experience/resources/views/emails).
+- SSR build output under `bootstrap/ssr` is ignored by Git.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
